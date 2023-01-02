@@ -1,5 +1,6 @@
 <div class="container">
     <h1>My personal home page</h1>
-    <p>To find out more about me click on the 'About me' link below. Otherwise follow links in top navigation. </p>
-    <%= link_to "About me", about_path %>
+    <p>To find out more about me click on the 'About me' link below.  Or you can check out my blog - enjoy! </p>
+    <%= link_to "About me", about_path, class: "btn btn-secondary btn-sm" %>
+    <%= link_to "Blog", posts_path, class: "btn btn-primary btn-sm" %>
 </div>
