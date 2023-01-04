@@ -3,12 +3,18 @@
   <h1>Posts</h1>
 
   <div id="posts">
-    <% @posts.each do |post| %>
-      <%= render post %>
-      <p>
-        <%= link_to "Show this post", post, class: "link-primary" %>
-      </p>
-    <% end %>
+    <div class="row">
+      <% @posts.each do |post| %>
+        <div class="col-lg col-lg-4">
+          <div class="card mb-4", style="width: 25rem; border: 1px solid darkgray; padding: .5rem 1rem">
+            <%= render post %>
+            <p>
+              <%= link_to "Show this post", post, class: "link-primary" %>
+            </p>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 
   <%= link_to "New post", new_post_path, class: "btn btn-success" %>
