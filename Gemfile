@@ -73,3 +73,4 @@ end
 
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'erb_lint', require: false
+gem "ransack", "~> 3.2"
