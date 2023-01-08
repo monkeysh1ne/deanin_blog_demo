@@ -1,7 +1,11 @@
-
-<%= form_with(model: [post, comment]) do |f| %>
-  <div class="form-control">
-    <%= f.rich_text_area :body %>
-    <%= f.submit submit_label, class: "btn btn-primary mt-1" %>
-  </div>
+<%# if user not signed in redirect to sign-in page. %>
+<% unless user_signed_in? %>
+  <p>To comment please <%= link_to "sign in", new_user_session_path %> or <%= link_to "register", new_user_registration_path %></p>
+<% else %>
+  <%= form_with(model: [post, comment]) do |f| %>
+    <div class="form-control">
+      <%= f.rich_text_area :body %>
+      <%= f.submit submit_label, class: "btn btn-primary mt-1" %>
+    </div>
+  <% end %>
 <% end %>

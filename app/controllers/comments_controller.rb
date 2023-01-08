@@ -13,7 +13,6 @@ class CommentsController < ApplicationController
             flash[:alert] = "Comment has not been created"
             redirect_to post_path(@post)
         end
-
     end
 
     def update
