@@ -64,7 +64,7 @@ class PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @post = Post.friendly.find(params[:id])
+      @post = Post.find(params[:id])
 
       # If an old id or a numeric id was used to find the record, then
       # the request slug will not match the current slug, and we should do

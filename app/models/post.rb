@@ -6,7 +6,7 @@ class Post < ApplicationRecord
     belongs_to :user
     has_many :comments, dependent: :destroy
 
-    friendly_id :title, use: %i[slugged history]
+    friendly_id :title, use: %i[slugged history finders]
 
 
     def should_generate_new_friendly_id?
