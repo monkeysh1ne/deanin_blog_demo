@@ -111,6 +111,8 @@ GEM
       smart_properties
     erubi (1.12.0)
     ffi (1.15.5)
+    friendly_id (5.5.0)
+      activerecord (>= 4.0.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -273,6 +275,7 @@ DEPENDENCIES
   debug
   devise (~> 4.8, >= 4.8.1)
   erb_lint
+  friendly_id (~> 5.5)
   image_processing (~> 1.2)
   importmap-rails
   jbuilder
